@@ -1,0 +1,21 @@
+spring:
+  mail:
+    host: smtp.163.com # Sending mail server
+    username: jrbyposttest@163.com # Email address for sending emails
+    password: RBRGRIGFOJNGTOHO # Client authorization code
+    properties.mail.smtp.port: 994 # 465 or 994
+    from: jrbyposttest@163.com # The address from which the email is sent
+    nickname: NEUSoft教育
+    properties.mail.smtp.starttls.enable: true
+    properties.mail.smtp.starttls.required: true
+    properties.mail.smtp.ssl.enable: true
+    default-encoding: utf-8
+
+sms:
+  aliyun:
+    accessKeyID: ydcPUJI25NlaMuSM8FBgvA1EmmQ4PNGFfkf45ZQUk53kupyYKqyZ41dF3+85MZo0adedE9s2gwr2c0tFcHZD3A # accessKeyID
+    accessKeySecret: bD/ERE4bW+GGLD6A0JWaXioiEb91GDm2lbLICSq01GEk2j5aHivhvn68w8A0ZGOygqyu8aCwbS0dOIL/TbGnoQ # accessKeySecret
+    domain: dysmsapi.aliyuncs.com
+    regionId: cn-hangzhou
+    templateCode: SMS_215344833 # your template code
+    signName: 东软教育 # your signature

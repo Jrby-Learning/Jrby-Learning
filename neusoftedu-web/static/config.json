@@ -1,0 +1,6 @@
+{
+  "defaultVersion": "东软教育 v1.0",
+  "isEnableDeployUrl": false,
+  "deployUrl": "http://127.0.0.1:10010",
+  "developmentUrl": "http://127.0.0.1:10010"
+}

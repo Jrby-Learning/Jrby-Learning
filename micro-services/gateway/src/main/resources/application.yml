@@ -1,0 +1,64 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      server-addr: http://120.53.244.54:8848
+    gateway:
+      globalcors:
+        add-to-simple-url-handler-mapping: true
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "GET"
+              - "POST"
+              - "DELETE"
+              - "PUT"
+              - "OPTIONS"
+            allowedHeaders: "*"
+            allowCredentials: true
+            maxAge: 360000
+      routes:
+        - id: coin-service
+          uri: lb://coin-service
+          predicates:
+            - Path=/coin/**,/user/sign,/user/checkSign,/user/check/**,/user/signCount,/user/coiledSignCount,/vip/**
+
+        - id: resource-service
+          uri: lb://resource-service
+          predicates:
+            - Path=/course/article/**,/banner/**,/course/resource/**,/upload/**
+
+        - id: course-service
+          uri: lb://course-service
+          predicates:
+            - Path=/course/**,/user/playRecord/**,/user/studyRecord/**,/user/course/**
+
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/user/**,/global/**,/util/**
+
+        - id: mail-service
+          uri: lb://mail-service
+          predicates:
+            - Path=/sms/**
+
+        - id: order-service
+          uri: lb://order-service
+          predicates:
+            - Path=/order/**
+
+        - id: message-service
+          uri: lb://message-service
+          predicates:
+            - Path=/message/**
+
+        - id: pay-service
+          uri: lb://pay-service
+          predicates:
+            - Path=/alipay/**

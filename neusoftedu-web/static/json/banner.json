@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "bannerId": 1,
+      "courseName": "人像修图入门课",
+      "courseId": 1,
+      "bannerUrl": "https://blog-zys.oss-cn-shenzhen.aliyuncs.com/images/bannerImage/162303635373404054805a22632f5c927063208e5b84e.png"
+    },
+    {
+      "bannerId": 2,
+      "courseName": "Excel 基础入门",
+      "courseId": 2,
+      "bannerUrl": "https://blog-zys.oss-cn-shenzhen.aliyuncs.com/images/bannerImage/162303635373404054805a22632f5c927063208e5b84e.png"
+    },
+    {
+      "bannerId": 3,
+      "courseName": "Python基础趣讲精炼",
+      "courseId": 3,
+      "bannerUrl": "https://blog-zys.oss-cn-shenzhen.aliyuncs.com/images/bannerImage/162303635373404054805a22632f5c927063208e5b84e.png"
+    },
+    {
+      "bannerId": 4,
+      "courseName": "证券投资入门：组合决策与管理",
+      "courseId": 4,
+      "bannerUrl": "https://blog-zys.oss-cn-shenzhen.aliyuncs.com/images/bannerImage/162303635373404054805a22632f5c927063208e5b84e.png"
+    }
+  ]
+}
